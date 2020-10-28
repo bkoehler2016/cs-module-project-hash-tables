@@ -6,7 +6,7 @@ Task: Implement a basic hash table without collision resolution.
 
 1. Implement a `HashTable` class and `HashTableEntry` class.
 
-2. Implement a good hashing function. 
+2. Implement a good hashing function.
 
    Recommend either of:
 
