@@ -7,6 +7,8 @@ class HashTableEntry:
         self.value = value
         self.next = None
 
+    def __repr__(self):
+        return f'HashTableEntry({repr(self.value)})'
 
 # Hash table can't have fewer than this many slots
 MIN_CAPACITY = 8
@@ -22,6 +24,8 @@ class HashTable:
 
     def __init__(self, capacity):
         # Your code here
+        self.capacity = capacity
+        self.table = [None] * capacity
 
 
     def get_num_slots(self):
