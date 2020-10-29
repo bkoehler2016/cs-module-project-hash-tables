@@ -154,7 +154,7 @@ if __name__ == "__main__":
     print("")
 
     # Test storing beyond capacity
-    for i in range(1, 13):
+    for i in range(1, 13): 
         print(ht.get(f"line_{i}"))
 
     # Test resizing
