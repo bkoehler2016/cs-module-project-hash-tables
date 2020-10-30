@@ -14,6 +14,7 @@ class HashTable:
     def __init__(self, capacity = MIN_CAPACITY):
         self.capacity = capacity
         self.table = [None] * capacity
+        self.item_count = 0
 
     def get_num_slots(self):
         return len(self.table)
@@ -29,11 +30,7 @@ class HashTable:
             return count
 
     def get_load_factor(self):
-        load = 0
-        for index in range(len(self.table)):
-            if self.table[index] is not None:
-                load += self.count_at_index(index)
-        return load / self.capacity
+        return self.item_count / self.capacity
 
 # FNV! Hash method
     def fnv1(self, key):
