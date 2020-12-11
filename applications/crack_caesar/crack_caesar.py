@@ -16,7 +16,7 @@ def letterCount(s):
     letters = [l.upper() for l in s if l.isalpha()]
     for letter in letters:
         dict[letter] = dict[letter] + 1 if letter in dict else 1
-    return dict 
+    return dict
 
 def caesarCipherKey(cipherText):
     letters = ['E', 'T', 'A', 'O', 'H', 'N', 'R', 'I', 'S', 'D', 'L', 'W', 'U', 
